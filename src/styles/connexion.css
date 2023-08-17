@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+}
+
+.headerConnexion {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.headerConnexion img {
+
+    height: 33vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+
+/* ---------------------------------- */
+.Connexion {
+    margin-top: 20vh;
+    height: 70vh;
+    width: 100%;
+    background: #20835D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Connexion h1 {
+    color: rgb(218, 202, 63);
+    font-family: 'Gravitas One', cursive;
+    text-align: center;
+    margin: 15px 0;
+}
+
+form {
+    background: #1D5A43;
+    border-radius: 25px;
+    height: 85%;
+    margin: 0 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+::placeholder {
+    font-size: 1.5em;
+}
+
+.Connexion label {
+    color: #f1f1f1;
+    font-size: 30px;
+}
+
+.Connexion input,
+textarea {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background: #D9D9D9;
+    resize: none;
+}
+
+.Connexion button {
+    background: rgb(218, 202, 63);
+    color: #f1f1f1;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.Connexion p {
+    color: #f1f1f1;
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+
+}
+
+.a-connexion {
+    text-decoration: underline;
+    color: inherit;
+}
