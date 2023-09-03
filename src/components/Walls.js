@@ -2,8 +2,8 @@ import React from 'react';
 
 const Walls = () => {
     return (
-        <div>
-            
+        <div style={{textAlign: "center"}}> 
+            <h1>Wallls</h1>
         </div>
     );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Music = () => {
     return (
-        <div>
-            
+        <div style={{textAlign: "center"}}>
+            <h1>Music</h1>
         </div>
     );
 };

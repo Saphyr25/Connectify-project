@@ -19,8 +19,8 @@ function Navigation2() {
 			<nav ref={navRef} >
 			<h3>Connectify</h3>
 				<a href="/">Profil</a>
-				<a href="/connexion">Contact</a>
-				<a href="/inscription">Déconnexion</a>
+				<a href="/Contact">Contact</a>
+				<a href="/Accueil">Déconnexion</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

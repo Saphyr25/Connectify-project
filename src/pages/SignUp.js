@@ -5,6 +5,7 @@ import "../styles/inscription.css";
 import Footer from '../components/Footer';
 import { addDoc, collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 import { db } from "../firebase-config";
+import { Link } from 'react-router-dom';
 
 
 export default function Inscription() {
@@ -84,7 +85,7 @@ export default function Inscription() {
                         type="text" 
                         placeholder='Entrez votre email ...' />
                     
-                    <button action="Navigation" onClick={createUser}>Valider</button>
+                    <Link to={'/profile'}><button   action="Navigation" >Valider</button></Link>
                 </form>
                 <p className='Inscription-p'>Déjà un compte ? <a className='a-Inscription' href="connexion">Connectez-vous</a></p>
                 <Footer/>

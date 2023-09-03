@@ -1,13 +1,13 @@
 import React from 'react';
 import "../styles/contact.css"
 import image from "../media/contact.jpg"
-import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import Navigation2 from '../components/Navigation2';
 
 const Contact = () => {
     return (
         <div>
-                     <Navigation/>
+                    <Navigation2/>
             <header className='headerContact'>
                 <img src={image} alt="" />
             </header>

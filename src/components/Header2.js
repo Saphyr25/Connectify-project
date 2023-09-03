@@ -9,11 +9,10 @@ const Header2 = () => {
         <div className="banner">
           {/* <img className='image' src={Banner}/> */}
           <div className='bannerProfile'><img className='avatar' src={Pdp} />
-            {/* <Text cName="name"
-                  text="riyad"
-                  text2="habchi"
-                  /> */}
+          <h1>nom</h1>
+        <h1>prenom</h1>
           </div>
+
         </div>
     );
 };

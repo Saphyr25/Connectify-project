@@ -50,6 +50,7 @@
     margin-right: auto;
     margin-top: 25px; */
     display: flex;
+    flex-direction: column;
     justify-content: flex-start; /*au début*/
     align-items: center; /*de haut en bas*/
 }
