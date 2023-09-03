@@ -1,6 +1,6 @@
 import React from 'react';
 import video from "../media/header_video.mp4";
-import "../styles/style.css"
+import "../styles/header.css"
 
 const Header = () => {
     return (

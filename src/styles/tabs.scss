@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+  justify-content: center;
+
+}
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 1rem;
+	cursor: pointer;
+  background: #D9C93B;
+  font-weight: bold;
+  transition:  ease 0.2s;
+
+}
+.tabs h1{
+    font-family: 'Gravitas One', cursive;
+	color: rgb(218, 202, 63);
+	margin: auto;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #7e7e2d;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+// -------------------------------------------------
+.gallery_content{
+
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery_content img{
+	height: 40%;
+	width: 40%;
+	padding: 0.3rem 0.3rem;
+}

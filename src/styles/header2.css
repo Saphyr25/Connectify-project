@@ -1,0 +1,60 @@
+/* .header2Container {
+  height: 50vh;
+}
+.header2Container img {
+    height: 100%;
+    width: 100%;
+  }
+  .header2Container .banniere{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .header2Container .pdpcontent{
+    height: 80%;
+    width: 80%;
+    background: rgba(190,186,186,.72);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profil_header{
+    text-align: center;
+  }
+  .header2Container .pdp{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+  }
+   */
+   .banner{
+    height: 300px;
+    width: 100%;
+    background: url(../media/banner-profil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /*au début*/
+    align-items: center; /*de haut en bas*/
+}
+.bannerProfile{
+    height: 250px;
+    width: 80%;
+    background-color: #BEBABA;
+    opacity: 70%;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px; */
+    display: flex;
+    justify-content: flex-start; /*au début*/
+    align-items: center; /*de haut en bas*/
+}
+.avatar{
+    height: 140px;
+    width: auto;
+    margin-left: 5%;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { useRef } from "react";
 import "../styles/nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Navigation() {
 	const navRef = useRef(null);
@@ -17,9 +18,10 @@ function Navigation() {
 			<h2>Connectify</h2>
 			<nav ref={navRef} >
 			<h3>Connectify</h3>
-				<a href="/accueil">Accueil</a>
-				<a href="/connexion">Connexion</a>
-				<a href="/inscription">Inscription</a>
+				
+				<Link to={'/'}>Accueil</Link>
+				<Link to={'/Connexion'}>Connexion</Link>
+				<Link to={'/Inscription'}>Inscription</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import "../styles/nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+
 function Navigation2() {
 	const navRef = useRef(null);
 
@@ -13,13 +14,13 @@ function Navigation2() {
 	};
 
 	return (
-		<div className='nav-content'>
+		<div className='nav-content' style={{background:"#20835D"}}>
 			<h2>Connectify</h2>
 			<nav ref={navRef} >
 			<h3>Connectify</h3>
-				<a href="/accueil">Accueil</a>
-				<a href="/connexion">Connexion</a>
-				<a href="/inscription">Inscription</a>
+				<a href="/">Profil</a>
+				<a href="/connexion">Contact</a>
+				<a href="/inscription">Déconnexion</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

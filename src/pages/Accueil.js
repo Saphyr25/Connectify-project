@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import Header from "../components/Header"
 import Navigation from '../components/Navigation';
 import "../styles/accueil.css";
@@ -7,7 +7,39 @@ import image2 from "../media/QNS.jpg"
 import Footer from '../components/Footer';
 
 
+const traductions = [
+     "Bienvenue",
+     "Welcome",
+     "Bienvenido",
+     "Willkommen",
+     "ben vini",
+     "Byenvini",
+     "Akksil ak diam",
+     "дякую",
+     "স্বাগত",
+     "欢迎光临",
+    'مرحباً',
+    "ברוך הבא",
+    "いらっしゃいませ",
+    "Anṣuf yis-wen",
+    "ⴰⵏⵚⵓⴼ ⵢⵉⵙ ⵡⴻⵏ",
+];
 const Accueil = () => {
+
+    const [index,setindex ]= useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+      setindex((prevIndex) =>
+      prevIndex === traductions.length - 1 ? 0 : prevIndex + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+  
+
+      
+    
+    
     return (
         <div className='container'>
             <div className="Header scroll-area">
@@ -16,7 +48,7 @@ const Accueil = () => {
             </div>
             {/* ---------------------------------------- */}
             <div className="Bienvenue  scroll-area">
-                <h1>Bienvenue</h1>
+                <h1 >{traductions[index]}</h1>
                 <p>"Harmonisez vos passions,
                     partagez vos émotions avec
                     Connectify !"</p>
