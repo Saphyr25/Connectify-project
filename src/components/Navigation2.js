@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navigation2() {
 	const navRef = useRef(null);
+	// useRef permets de stocker une valeur qui ne provoque pas de nouveau rendu lors de la mise à jour.
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle(

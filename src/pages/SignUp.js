@@ -9,25 +9,25 @@ import { Link } from 'react-router-dom';
 
 
 export default function Inscription() {
-    const [newName, setNewName] = useState("")
-    const [newMdp, setNewMdp] = useState(0)
-    const [users, setUsers] = useState([]);
-    const usersCollectionRef = collection(db, "users")
-  
-    const createUser = async () => {
-      await addDoc(usersCollectionRef, {name: newName , mdp : newMdp})
+  const [newName, setNewName] = useState("")
+  const [newMdp, setNewMdp] = useState(0)
+  const [users, setUsers] = useState([]);
+  const usersCollectionRef = collection(db, "users")
+
+  const createUser = async () => {
+    await addDoc(usersCollectionRef, {name: newName , mdp : newMdp})
+  }
+  const updateUser = async (id, mdp) =>{
+    const userDoc = doc(db, "users", id)
+    await updateDoc(userDoc, )
+  }
+
+  useEffect(() => {
+    const getUsers = async () => {
+      const data = await getDocs(usersCollectionRef)
+      setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+
     }
-    const updateUser = async (id, mdp) =>{
-      const userDoc = doc(db, "users", id)
-      await updateDoc(userDoc, )
-    }
-  
-    useEffect(() => {
-      const getUsers = async () => {
-        const data = await getDocs(usersCollectionRef)
-        setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-  
-      }
   
   
       getUsers()
@@ -85,7 +85,7 @@ export default function Inscription() {
                         type="text" 
                         placeholder='Entrez votre email ...' />
                     
-                    <Link to={'/profile'}><button   action="Navigation" >Valider</button></Link>
+                    <Link to={'/profile'}><button   action="Navigation" onClick={createUser}>Valider</button></Link>
                 </form>
                 <p className='Inscription-p'>Déjà un compte ? <a className='a-Inscription' href="connexion">Connectez-vous</a></p>
                 <Footer/>

@@ -12,12 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-         <Route path="/" element={<Accueil />} />
-         <Route path="/Accueil" element={<Accueil />} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/Accueil" element={<Accueil />} />
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/inscription" element={<Inscription />} />
-        // <Route path="/contact" element={<Contact />} />
-        // <Route path="/profile" element={<Profile />} /> 
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} /> 
       </Routes>
     </BrowserRouter> 
   );

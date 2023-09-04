@@ -2,12 +2,12 @@
 
  .tabs {
 	display: flex;
-	flex-wrap: wrap; // make sure it wraps
+	flex-wrap: wrap; 
   justify-content: center;
 
 }
 .tabs label {
-	order: 1; // Put the labels first
+	order: 1;
 	display: block;
 	padding: 1rem 1rem;
 	cursor: pointer;

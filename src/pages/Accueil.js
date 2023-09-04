@@ -27,12 +27,15 @@ const traductions = [
 const Accueil = () => {
 
     const [index,setindex ]= useState(0)
+    // usestate permets de mettre a jour la valeur d une const et d une fonction
 
     useEffect(() => {
         const interval = setInterval(() => {
       setindex((prevIndex) =>
       prevIndex === traductions.length - 1 ? 0 : prevIndex + 1);
+    //Index est increémenté jusqu'à atteindre la longueur du tableau , auquel cas index est reinitialisé et le tableau recommence
     }, 1000);
+    // interval définie a 1s
     return () => clearInterval(interval);
   }, []);
   
@@ -49,6 +52,7 @@ const Accueil = () => {
             {/* ---------------------------------------- */}
             <div className="Bienvenue  scroll-area">
                 <h1 >{traductions[index]}</h1>
+                {/* h1 est relié a l index de traduction permettant d afficher chaque langue du tableau */}
                 <p>"Harmonisez vos passions,
                     partagez vos émotions avec
                     Connectify !"</p>
